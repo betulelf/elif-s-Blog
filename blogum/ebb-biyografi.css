@@ -1,0 +1,298 @@
+/*Elif Betul Bayram'in Biyografi Bolumu Calismasidir.*/
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Shadows Into Light", serif;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  /*satir arasi bosluk birakmak icindir.*/
+  background-color: rgb(169, 113, 73);
+ 
+ 
+
+
+
+}
+
+a {
+  text-decoration: none;
+  /*alt cizgi kaldirmak icindir.*/
+}
+
+ul {
+  list-style-type: none;
+  /*madde basliklarini kaldirmak icindir.*/
+}
+
+nav {
+  background-color: bisque;
+  color: #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.blog-menu {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.blog-menu li {
+  float: left;
+  margin: 10px;
+}
+
+.blog-menu a {
+  color: black;
+  font-size: 16px;
+  display: block;
+  padding: 5px;
+  letter-spacing: 1px;
+  transition: color 0.4s;
+}
+
+.blog-menu a:hover {
+  color: chocolate;
+}
+
+header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 200px;
+  font-size: 20px;
+  background-color: brown;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/*Chat Gpt ile yapilmistir.*/
+/* Slider kapsayıcı */
+.slideshow-container {
+  max-width: 1000px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  /* Taşmaları engelle */
+  border: none;
+  /*box-shadow ve border-radius ozellikleri kaldirildi.*/
+  align-items: center;
+  /* Dikeyde ortala */
+  justify-content: center;
+  /* Yatayda ortala */
+  background-color: brown;
+
+}
+
+/* Slaytlar */
+.mySlides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* Resimleri bozmadan sığdır ve ortala */
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Resmi kırpmadan sığdır */
+  object-position: center;
+  /* Ortala */
+
+}
+
+/* Başlık yazıları */
+.text {
+  color: darkgoldenrod;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* Otomatik geçiş animasyonu */
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Slaytları sırayla göstermek */
+.mySlides:nth-child(1) {
+  animation: slideShow 24s infinite 0s;
+  /* İlk slayt */
+}
+
+.mySlides:nth-child(2) {
+  animation: slideShow 24s infinite 4s;
+  /* İkinci slayt */
+}
+
+.mySlides:nth-child(3) {
+  animation: slideShow 24s infinite 8s;
+  /* Üçüncü slayt */
+}
+
+.mySlides:nth-child(4) {
+  animation: slideShow 24s infinite 12s;
+}
+
+.mySlides:nth-child(5) {
+  animation: slideShow 24s infinite 16s;
+}
+
+.mySlides:nth-child(6) {
+  animation: slideShow 24s infinite 20s;
+}
+
+/* Küçük ekran uyumu */
+@media only screen and (max-width: 600px) {
+  .slideshow-container {
+    height: 300px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+/*Son kisimdir. Chat Gpt ile yapilmistir.*/
+
+.mySlides a {
+  color: goldenrod;
+}
+
+section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 22px;
+  padding-top: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+section .bio-content {
+  overflow: auto;
+  padding: 15px;
+}
+
+section .bio-content img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+section .bio-content1 {
+  overflow: auto;
+  padding: 15px;
+}
+
+section .bio-content1 img {
+  width: 300px;
+  float: right;
+  margin-right: 20px;
+}
+
+section .bio-content2 {
+  overflow: auto;
+  padding: 15px;
+}
+
+section .bio-content2 img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: bisque;
+  color: black;
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 30%;
+  padding: 3px;
+}
+
+
+footer h4 {
+  font-size: 24px;
+}
+
+footer p {
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.btn-social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.copyright {
+  background-color: lightgoldenrodyellow;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: chocolate;
+  text-align: center;
+}

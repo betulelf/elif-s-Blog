@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Elif'in Blogu</title>
+    <link rel="stylesheet" href="ana-sayfa.css">
+</head>
+
+<body>
+
+    <!-- Top Banner -->
+    <div id="top-banner" style="background:#222; color:#fff; font-size:14px; padding:5px 10px; text-align:right;">
+        <a href="https://instagram.com/yourprofile" target="_blank"
+            style="color:#fff; margin-left:10px; text-decoration:none;">📸 Instagram</a>
+        <a href="https://wordpress.com/yourprofile" target="_blank"
+            style="color:#fff; margin-left:10px; text-decoration:none;">📝 WordPress</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+            style="color:#fff; margin-left:10px; text-decoration:none;">🔗 LinkedIn</a>
+        <a href="https://upwork.com/yourprofile" target="_blank"
+            style="color:#fff; margin-left:10px; text-decoration:none;">💼 Upwork</a>
+        <a href="https://glassdoor.com/yourprofile" target="_blank"
+            style="color:#fff; margin-left:10px; text-decoration:none;">🏢 Glassdoor</a>
+        <a href="https://freelancer.com/yourprofile" target="_blank"
+            style="color:#fff; margin-left:10px; text-decoration:none;">👩‍💻 Freelancer</a>
+        <a href="#">👩‍💻 GitHub</a>
+    </div>
+
+    <!-- Blog Başlığı -->
+    <header style="background:#008080; color:#fff; padding:1rem; text-align:center;">
+        <h1>Elif'in Blogu</h1>
+    </header>
+
+    <!-- Menü -->
+    <nav style="background:#006666; display:flex; justify-content:center; gap:1rem; padding:0.5rem 0;">
+        <a href="#" style="color:#fff; text-decoration:none; padding:0.5rem 1rem;">Blog Yazıları</a>
+        <a href="biyografi.html" target="_blank"
+            style="color:#fff; text-decoration:none; padding:0.5rem 1rem;">Hakkımda</a>
+        <a href="#" style="color:#fff; text-decoration:none; padding:0.5rem 1rem;">İletişim</a>
+    </nav>
+
+    <div class="main-layout">
+        <div class="main-content">
+            <!-- Blog Yazıları Kartları -->
+            <section class="blog-container">
+
+                <div class="blog-card">
+                    <img src="images/kahve-arasi.jpg" alt="Blog Resmi 1" />
+                    <div class="blog-card-content">
+                        <h3>İlk Blog Yazım</h3>
+                        <p>HTML ve CSS ile basit blog yapmayı öğreniyorum. Bu yazıda temel kavramları anlatıyorum.</p>
+                        <a href="#">Devamını Oku</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="images/eregli.jpg" alt="Blog Resmi 2" />
+                    <div class="blog-card-content">
+                        <h3>JavaScript ile Dinamik Yazılar</h3>
+                        <p>JS ile sayfa içeriğini nasıl dinamik yapabileceğimizi anlatıyorum. Basit örnekler var.</p>
+                        <a href="#">Devamını Oku</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="images/kulakkaya-gezisinden.jpg" alt="Blog Resmi 3" />
+                    <div class="blog-card-content">
+                        <h3>CSS Grid ile Layout</h3>
+                        <p>Grid sistemi ile sayfa düzeni oluşturmanın avantajlarını anlatıyorum. Responsive örnekler.
+                        </p>
+                        <a href="#">Devamını Oku</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Slider Bölümü -->
+            <section style="max-width: 1000px; margin: 40px auto; padding: 0 10px;">
+                <h2 style="color:#008080; text-align:center;">Fotoğraf Galerisi</h2>
+                <div class="slider-container"
+                    style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 3px 7px rgba(0,0,0,0.2);">
+
+                    <img src="images/black-cay.jpg" alt="Slider 1" class="slider-image"
+                        style="width:100%; display:block;" />
+                    <img src="images/luna.jpg" alt="Slider 2" class="slider-image" style="width:100%; display:none;" />
+                    <img src="images/simba.jpg.jpg" alt="Slider 3" class="slider-image"
+                        style="width:100%; display:none;" />
+
+                    <!-- Önceki Butonu -->
+                    <button id="prevBtn"
+                        style="position:absolute; top:50%; left:10px; transform: translateY(-50%); background:#008080; border:none; color:#fff; padding:10px; border-radius:50%; cursor:pointer;">&#10094;</button>
+                    <!-- Sonraki Butonu -->
+                    <button id="nextBtn"
+                        style="position:absolute; top:50%; right:10px; transform: translateY(-50%); background:#008080; border:none; color:#fff; padding:10px; border-radius:50%; cursor:pointer;">&#10095;</button>
+                </div>
+
+            </section>
+
+            <section class="books-section">
+                <h2>Kitap Okumalarım</h2>
+                <div class="card-container">
+
+                    <article class="card">
+                        <img src="images/aradigin_sey_kutuphanede_sakli.jpg" alt="Kitap 1" />
+                        <div class="card-content">
+                            <h3>Kitap Başlığı 1</h3>
+                            <p>Kısa kitap açıklaması buraya gelecek. İlginç ve merak uyandırıcı olmalı.</p>
+                            <a href="#">Devamını Oku &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/mobius_adam_fawer.jpg" alt="Kitap 2" />
+                        <div class="card-content">
+                            <h3>Kitap Başlığı 2</h3>
+                            <p>Bu kitap hakkında kısa bir özet ya da yorum yazılabilir.</p>
+                            <a href="#">Devamını Oku &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/ugultulu_tepeler.jpg" alt="Kitap 3" />
+                        <div class="card-content">
+                            <h3>Kitap Başlığı 3</h3>
+                            <p>Buraya da başka bir kitap hakkında kısa bilgi ekleyebilirsin.</p>
+                            <a href="#">Devamını Oku &raquo;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="parallax-section">
+                <div class="parallax-bg"></div>
+                <div class="parallax-content">
+                    <h2>Spiderman Evreni</h2>
+                    <p>Parallax efektli Spiderman görseliyle dikkat çekici bir bölüm.</p>
+                </div>
+            </section>
+
+            <section class="movies-section">
+                <h2>Filmler</h2>
+                <div class="card-container">
+
+                    <article class="card">
+                        <img src="images/harrypotter2.jpg" alt="Film 1" />
+                        <div class="card-content">
+                            <h3>Film Başlığı 1</h3>
+                            <p>Film hakkında kısa bilgi ya da yorum.</p>
+                            <a href="#">Devamını Oku &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/intersteller.jpg" alt="Film 2" />
+                        <div class="card-content">
+                            <h3>Film Başlığı 2</h3>
+                            <p>Film hakkında kısa bilgi ya da yorum.</p>
+                            <a href="#">Devamını Oku &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/ask_ve_gurur.jpeg" alt="Film 3" />
+                        <div class="card-content">
+                            <h3>Film Başlığı 3</h3>
+                            <p>Film hakkında kısa bilgi ya da yorum.</p>
+                            <a href="#">Devamını Oku &raquo;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="image-banner">
+                <img src="images/profiterol1.jpg" alt="Yemek ve Tatlı" />
+            </section>
+
+            <section class="recipes-section">
+                <h2>Yemek & Tatlı Tarifleri</h2>
+                <div class="card-container">
+
+                    <article class="card">
+                        <img src="images/cikolatali_kek.jpg" alt="Kek Tarifi" />
+                        <div class="card-content">
+                            <h3>Çikolatalı Kek</h3>
+                            <p>Yoğun çikolatalı, yumuşacık bir kek tarifi. Kahveyle harika gider!</p>
+                            <a href="#">Tarife Git &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/patatesli_borek.jpg" alt="Börek Tarifi" />
+                        <div class="card-content">
+                            <h3>Patatesli Börek</h3>
+                            <p>Klasik ama vazgeçilmez, çıtır çıtır patatesli börek.</p>
+                            <a href="#">Tarife Git &raquo;</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/tarcinli_kurabiye.jpg" alt="Kurabiye Tarifi" />
+                        <div class="card-content">
+                            <h3>Tarçınlı Kurabiye</h3>
+                            <p>Sıcak içeceklerle şahane giden tarçınlı kurabiye tarifi.</p>
+                            <a href="#">Tarife Git &raquo;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- İletişim Formu Bölümü -->
+            <section class="contact-section" id="iletisim">
+                <h2>İletişim</h2>
+                <form class="contact-form">
+                    <label for="name">Adınız</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">E-posta</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Mesajınız</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Gönder</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- SAĞ TARAF: ASIDE (YAN KUTU) -->
+        <aside class="sidebar">
+            <div class="widget">
+                <img src="images/profil.jpg" alt="" class="profile-image" />
+                <a href="biyografi.html " target="_blank">
+                    <h3>Hakkımda</h3>
+                </a>
+                <p>Merhaba! Ben Elif...</p>
+            </div>
+
+            <div class="widget">
+                <h3>Son Yazılar</h3>
+                <ul>
+                    <li>
+
+                        <article class="card">
+                            <img src="images/tarcinli_kurabiye.jpg" alt="Kurabiye Tarifi" />
+                            <div class="card-content">
+                                <h3>Tarçınlı Kurabiye</h3>
+                                <p>Sıcak içeceklerle şahane giden tarçınlı kurabiye tarifi.</p>
+                                <a href="#">Tarife Git &raquo;</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <img src="images/intersteller.jpg" alt="Film 2" />
+                            <div class="card-content">
+                                <h3>Film Başlığı 2</h3>
+                                <p>Film hakkında kısa bilgi ya da yorum.</p>
+                                <a href="#">Devamını Oku &raquo;</a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Etiketler</h3>
+                <div class="tags">
+                    <span>#blog</span><span>#kitap</span><span>#film</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+    </div>
+
+
+    <!-- Footer Bölümü -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2025 Elif'in Bloğu. Tüm hakları saklıdır.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">WordPress</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Upwork</a>
+                <a href="#" target="_blank">Freelancer</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="ana-sayfa.js"></script>
+
+</body>
+
+</html>

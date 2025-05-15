@@ -1,0 +1,591 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+
+/* Top Banner */
+#top-banner {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+#top-banner a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+#top-banner a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: #008080;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  text-align: center;
+}
+
+/* Menü */
+nav {
+  background: #006666;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background: #004d4d;
+}
+
+/*main-layout*/
+
+.main-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  /* Bunu ekleyebiliriz */
+  align-items: flex-start; /* üst hizalama için */
+
+}
+
+.sidebar {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 0; /* eğer varsa üst margin kaldır */
+}
+
+.profile-image {
+  width: 150px;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  /* resim için alt boşluk */
+  display: block;
+  /* resim için blok düzene geçiş */
+  object-fit: contain;
+  /* resim için içeriği kapsama */
+  margin-left: auto;
+  /* resim için sola yaslama */
+  margin-right: auto;
+  /* resim için sağa yaslama */
+  border: 2px solid #008080;
+  /* resim için kenar boşluğu */
+  padding: 5px;
+  /* resim için iç boşluk */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  /* resim için gölge efekti */
+
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+.widget h3 {
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widget ul li {
+  margin-bottom: 8px;
+}
+
+.widget ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.widget ul li a:hover {
+  color: #008080;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background-color: #e0f7f7;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #006666;
+}
+
+/*main-layout*/
+
+/* Blog Kart Container */
+.main-layout .blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Responsive grid */
+  grid-template-rows: auto;
+  /* Auto height for rows */
+  grid-auto-flow: dense;
+  /* Fill rows before creating new ones */
+  grid-gap: 20px;
+  /* Space between items */
+  max-width: inherit;
+  /* Max width for the grid */
+  margin: 0 auto 40px auto;
+  /* Center the grid */
+  padding: 0 10px;
+  /* Padding for the grid */
+}
+
+/* Blog Kart */
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  /* Flexbox for layout */
+}
+
+.blog-card img {
+  width: inherit;
+  height: 300px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.blog-card-content {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #008080;
+}
+
+.blog-card-content p {
+  flex-grow: 1;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.blog-card-content a {
+  align-self: flex-start;
+  background: #008080;
+  color: white;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.blog-card-content a:hover {
+  background: #005050;
+}
+
+.slider-container img {
+  width: 350px;
+  height: 400px;
+  /* yüksekliği orantılı otomatik ayarlar */
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+  /* or cover */
+
+}
+
+.books-section {
+  max-width: inherit;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+.books-section h2 {
+  color: #008080;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #008080;
+  padding-bottom: 5px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 15px;
+  flex-grow: 1;
+  /* Allow content to grow */
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Flexbox for content alignment */
+}
+
+.card-content h3 {
+  margin-top: 0;
+  color: #004d4d;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.card-content a {
+  color: #008080;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  align-self: flex-start;
+  /* Align to the start of the flex container */
+}
+
+/* Parallax Bölümü */
+.parallax-section {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  margin: 40px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/spiderman1.1.jpg');
+  /* Spiderman görseli */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.parallax-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.parallax-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Filmler Bölümü */
+.movies-section {
+  max-width: inherit;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+.movies-section h2 {
+  color: #008080;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #008080;
+  padding-bottom: 5px;
+}
+
+.movies-section .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.movies-section .card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.movies-section .card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.movies-section .card-content {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.movies-section .card-content h3 {
+  margin-top: 0;
+  color: #004d4d;
+}
+
+.movies-section .card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.movies-section .card-content a {
+  color: #008080;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.image-banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  /* isteğe göre align-items: center; */
+}
+
+.image-banner img {
+  width: 1200px;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+.recipes-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+.recipes-section h2 {
+  color: #008080;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #008080;
+  padding-bottom: 5px;
+}
+
+.recipes-section .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.recipes-section .card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes-section .card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.recipes-section .card-content {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes-section .card-content h3 {
+  margin-top: 0;
+  color: #004d4d;
+}
+
+.recipes-section .card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.recipes-section .card-content a {
+  color: #008080;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+/* İletişim Formu */
+.contact-section {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #008080;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #006666;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f2f2f2;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.footer-content .social-icons {
+  margin-top: 10px;
+}
+
+.footer-content .social-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #008080;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-content .social-icons a:hover {
+  color: #004d4d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .image-banner img {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
